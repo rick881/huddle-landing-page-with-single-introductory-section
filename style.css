@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --magenta: #FF0BAC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--Violet) !important;
+    color: white !important;
+}
+
+.heading {
+    font-family: Poppins;
+    font-family: 600;
+    line-height: 3.5rem !important; 
+}
+.desc {
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 18px !important;
+}
+.right a {
+    font-family: Poppins !important;
+    color: var(--Violet) !important;
+}
+.right {
+    max-width: 520px !important;
+}
+.right a:hover {
+    color: white !important;
+}
+.btn:hover {
+    background: var(--Soft-Magenta) !important;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start !important;
+    justify-content: end;
+}
+.social a {
+    color: whte !important;
+}
+.social .fa-brands {
+    color: white;
+}
+a {
+    text-decoration: none !important;
+}
+.fa {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.fa:hover {
+    color: var(--magenta) !important;
+    border-color: var(--magenta) !important;
+}
+@media screen and (max-width: 500px) {
+    body {
+        background: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: auto;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .hudle {
+        flex-direction: column;
+    }
+    .hudle img {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+    .right {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+    .heading {
+        text-align: center !important;
+    }
+    .social-media {
+        margin: 0 auto !important;
+    }
+    .social {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+    body {
+        background: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+    .row {
+        flex-direction: column;
+        margin: 0 auto !important;
+        gap: 2rem;
+    }
+    .hudle img {
+        margin: 0 auto;
+    }
+    .right {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+    .heading {
+        line-height: 2.5rem !important;
+    }
+    .social {
+        justify-content: center !important; 
+    }
+    
+}
