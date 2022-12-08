@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --magenta: #FF0BAC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet) !important;
+    font-family: Poppins !important;
+    color: white !important;
+    min-height: 100vh !important;
+    height: 100% !important;
+}
+
+/* ========= RIGHT SIDE SECTION =========== */
+.right {
+    max-width: 520px !important;
+}
+.heading {
+    font-family: 600;
+    line-height: 1.5 !important; 
+}
+.desc {
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 18px !important;
+}
+.right a {
+    font-family: Poppins !important;
+    color: var(--Violet) !important;
+}
+.right a:hover {
+    color: white !important;
+}
+.btn:hover {
+    background: var(--Soft-Magenta) !important;
+}
+
+/* ======== SOCIAL ICONS ========== */
+.social {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start !important;
+    justify-content: end;
+}
+.social a {
+    color: white !important;
+}
+.social .fa-brands {
+    color: white;
+}
+.fa {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.fa:hover {
+    color: var(--magenta) !important;
+    border-color: var(--magenta) !important;
+}
+
+/* ========= MOBILE DEVICES =========== */
+@media screen and (max-width: 500px) {
+    body {
+        background: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: auto;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .hudle {
+        flex-direction: column;
+    }
+    .hudle img {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+    .right {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+    .heading {
+        text-align: center !important;
+    }
+    .social-media {
+        margin: 0 auto !important;
+    }
+    .social {
+        justify-content: center;
+    }
+}
+
+/* ========= TABLET DEVICES ============== */
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+    body {
+        background: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+    .row {
+        flex-direction: column;
+        margin: 0 auto !important;
+        gap: 2rem;
+    }
+    .hudle img {
+        margin: 0 auto;
+    }
+    .right {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+    .social {
+        justify-content: center !important; 
+    }
+    
+}
